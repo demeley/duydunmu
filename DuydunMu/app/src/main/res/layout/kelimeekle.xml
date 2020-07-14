@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg2">
+
+    <Button
+        android:id="@+id/yenikelime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/araBilgi"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="432dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/p_01_header" />
+
+    <EditText
+        android:id="@+id/kelime"
+        android:layout_width="288dp"
+        android:layout_height="68dp"
+        android:background="@drawable/p11_textbox"
+        android:ems="10"
+        android:hint="Kelime Giriniz..."
+        android:inputType="textPersonName"
+        android:shadowColor="#00C0BFBF"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <Button
+        android:id="@+id/ara"
+        android:layout_width="273dp"
+        android:layout_height="64dp"
+        android:background="@drawable/p_09_btn_ekleme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kelime"
+        app:layout_constraintVertical_bias="0.08" />
+
+
+
+    <TextView
+        android:id="@+id/araBilgi2"
+        android:layout_width="376dp"
+        android:layout_height="79dp"
+        android:text="Eklenmesini istediğiniz kelimeyi metin kutusuna yazınız ve 'KELİMEYİ EKLE' butonuna basınız."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/araBilgi"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/araBilgi"
+        android:layout_width="376dp"
+        android:layout_height="61dp"
+        android:text="Eklenmesini istediğiniz kelime kısa süre içerisinde hazırlanarak sisteme eklenecektir."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ara"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <TextView
+        android:id="@+id/araBilgi3"
+        android:layout_width="376dp"
+        android:layout_height="25dp"
+        android:text="Katkınız için teşekkür ederiz.."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/araBilgi2"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="432dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/araBilgi3"
+        app:layout_constraintVertical_bias="0.998"
+        app:srcCompat="@drawable/p10_footer" />
+
+    <Button
+        android:id="@+id/soru"
+        android:layout_width="68dp"
+        android:layout_height="67dp"
+        android:background="@drawable/p_05_btn_faq_passive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/ana"
+        android:layout_width="68dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="76dp"
+        android:background="@drawable/p_06_search_passive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/soru"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/ekle"
+        android:layout_width="68dp"
+        android:layout_height="67dp"
+        android:background="@drawable/p_07_btn_add_active"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toEndOf="@+id/ana"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.272" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
